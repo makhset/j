@@ -1,0 +1,207 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+ 
+html, body { 
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+} 
+ 
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 50px; 
+    background-color: #1a020b00;  
+    color: white; 
+    position: fixed; /* Убедитесь, что заголовок фиксирован */ 
+    top: 0; /* Закрепите заголовок в верхней части экрана */ 
+    width: 100%; /* Установите ширину заголовка на 100% */ 
+    z-index: 1000; /* Установите высокий z-index, чтобы заголовок был поверх других элементов */ 
+} 
+ 
+header .logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+    letter-spacing: 2px; 
+} 
+ 
+header nav { 
+    display: flex; 
+    gap: 20px; 
+} 
+ 
+header nav a { 
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+} 
+ 
+header nav a:hover { 
+    color: #ffd700;  
+} 
+ 
+body { 
+    height: 200px; 
+    background-image: url('FoN.jpg'); 
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat; 
+    overflow-x: hidden;  
+} 
+ 
+main { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    margin-top: 200px; 
+    font-size: 20px 
+} 
+ 
+h2 { 
+    margin-bottom: 40px; 
+    font-size: 50px; 
+} 
+ 
+#countdown { 
+    text-align: center; 
+    font-size: 250%; 
+} 
+ 
+@keyframes snow { 
+    0% { transform: translateY(0); } 
+    100% { transform: translateY(100vh); } 
+} 
+ 
+.snowflake { 
+    position: absolute; 
+    top: -0px; 
+    z-index: 1000; 
+    color: white; 
+    font-size: 45px; 
+    user-select: none; 
+    pointer-events: none; 
+    animation: snow linear infinite; 
+} 
+ 
+.snowflake:nth-child(odd) { 
+    animation-duration: 20s; 
+} 
+ 
+.snowflake:nth-child(even) { 
+    animation-duration: 30s; 
+} 
+ 
+#skills { 
+    text-align: center; 
+    margin-top: 600px;  
+    padding: -200px; 
+    background-color: rgba(111, 109, 109, 0); 
+    color: black; 
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+} 
+ 
+#video-section { 
+    text-align: center; 
+    margin-top: 50px; 
+    color: black; 
+} 
+ 
+#video-section h2 { 
+    margin-bottom: 20px; 
+    font-size: 40px; 
+} 
+ 
+#video-section video { 
+    border: 2px solid white; 
+    border-radius: 10px; 
+} 
+ 
+.card-container { 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    border-radius: 20px; 
+    background-color: rgba(255, 255, 255, 0); 
+    color: black; 
+} 
+ 
+.card { 
+    background-color: rgba(63, 2, 2, 0.723); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    width: 200px; 
+    text-align: center; 
+    color: white; 
+} 
+ 
+.card img { 
+    width: 100%; 
+    height: auto; 
+} 
+ 
+.card-content { 
+    padding: 15px; 
+} 
+ 
+.card h3 { 
+    margin: 10px 0; 
+    font-size: 24px; 
+} 
+ 
+.card p { 
+    font-size: 16px; 
+} 
+ 
+.box-skills{ 
+    background-image:url(https://img.freepik.com/free-vector/seamless-vector-red-abstract-snow-frame-christmas-season-horizontally-repeatable_8130-2157.jpg?t=st=1734805482~exp=1734809082~hmac=13effd9e140398f728494bc233bc8cf322352ead7593efeb6aca1c39ccb05b5e&w=1800) ; 
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    height: 100%;  
+    width: 100%;  
+    z-index: -1; 
+} 
+ 
+.team { 
+    margin-left:50px; 
+
+} 
+ 
+footer { 
+    background-image: url(https://img.freepik.com/free-photo/ornament-bows-red-white-board_23-2147963827.jpg?t=st=1735042136~exp=1735045736~hmac=f18ceb0d47677edb7fa5140e26fab819f89f5c2449497f246e40341d0f8cffba&w=2000);  
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
+    padding: 40px 0; 
+    text-align: center; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+} 
+
+a{
+    text-decoration: none;
+}
+ 
+.footer-container { 
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    padding: 20px; 
+} 
+ 
+footer-section h2, .footer-section p, .social-media a { 
+    color: black;
+}
